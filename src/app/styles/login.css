@@ -1,0 +1,95 @@
+.rsp-login-form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .rsp-email-label,
+  .rsp-password-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .rsp-login-password{
+    margin-bottom: 3%;
+  }
+  
+  .rsp-login-website,
+  .rsp-login-password {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .rsp-login-website:focus,
+  .rsp-login-password:focus {
+    border-color: #0070f3;
+    outline: none;
+  }
+  
+  .rsp-login-website.error,
+  .rsp-login-password.error {
+    border-color: red;
+  }
+  
+  .rsp-error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .rsp-login-submit-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rsp-login-submit-button:hover {
+    background-color: #005bb5;
+  }
+  
+  .rsp-create-account,
+  .rsp-recover-account {
+    color: #0070f3;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .rsp-create-account:hover,
+  .rsp-recover-account:hover {
+    text-decoration: underline;
+  }
+  
+  .rsp-form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .rsp-message {
+    margin-bottom: 1rem;
+    color: red;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .rsp-login-header{
+    text-align: center;
+  }
+  

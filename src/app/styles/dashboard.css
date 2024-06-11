@@ -1,0 +1,157 @@
+/* Active Tab Styles */
+.rsp-dashboard-sidebar-link.active {
+    background-color: #111827;
+    color: #fff;
+    opacity: 1;
+}
+
+/* Sidebar Links */
+.rsp-dashboard-sidebar-link {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.rsp-dashboard-sidebar-link:hover {
+    box-shadow: inset 4px 0 0 0 #111827;
+    transition: box-shadow .1s linear;
+}
+
+.rsp-dashboard-sidebar-link .icon {
+    margin-right: 0.5rem;
+    width: 26px;
+}
+
+.rsp-dashboard-sidebar-tabs {
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+}
+.rsp-dashboard-sidebar-menu-sub{
+    height: 100%;
+}
+
+.rsp-dashboard-sidebar-link:focus {
+    background-color: #111827;
+    color: #fff;
+    opacity: 1;
+}
+
+/* General Styles */
+.rsp-dashboard-sidebar-menu {
+    width: 12%;
+    position: relative;
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: auto;
+}
+
+.rsp-dashboard-pages-section {
+    width: 88%;
+}
+
+/* Collapse State */
+[data-collapse="true"] {
+    width: 3.3rem;
+}
+
+[data-collapse="true"] .rsp-dashboard-sidebar-tabs {
+    display: none;
+}
+[data-collapse="true"] .rsp-dashboard-sidebar-link {
+    justify-content: center;
+}
+[data-collapse="true"] .rsp-dashboard-sidebar-link .icon {
+    margin-right: 0%;
+}
+
+/* Sidebar Collapse Button */
+.rsp-dashboard-sidebar-collapseButton {
+    position: absolute;
+    right: -.8rem;
+    top: 3rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    background: white;
+    width: 1.3rem;
+    height: 1.3rem;
+    transition: background-color 0.3s;
+}
+
+.rsp-dashboard-sidebar-collapseButton:hover {
+    background-color: #B5B5B5;
+}
+
+/* Rotate Icon */
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.rotate-0 {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+/* .rsp-sidebar-children-wrap-container{
+    height: 100vw;
+} */
+
+/* Media Query for Screen Width Below 991px */
+@media (max-width: 991px) {
+    .rsp-dashboard-sidebar-menu {
+        width: 3.3rem;
+    }
+    
+    .rsp-dashboard-sidebar-collapseButton {
+        display: none;
+    }
+    
+    .rsp-dashboard-sidebar-link {
+        justify-content: center;
+    }
+    
+    .rsp-dashboard-sidebar-tabs {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .rsp-dashboard-pages-section {
+        width: 100%;
+    }
+    .rsp-dashboard-sidebar-link .icon {
+        margin-right: 0rem;
+
+    }
+}    
+
+@media (max-width: 767px){
+    .rsp-dashboard-sidebar-menu {
+        height: auto;
+    }
+}
+@media (max-width: 767px){
+    .rsp-dashboard-sidebar-menu-sub {
+        height: 100%;
+    }
+}
+@media (min-height: 500px){
+    .rsp-sidebar-children-wrap-container{
+height: 100vh;
+    }
+}
+
+.rcs-ripple{
+position: absolute;
+top: 2.5rem;
+right: -1.6rem;
+}

@@ -1,0 +1,14 @@
+.logo {
+    img {
+        max-height: 150px;
+        margin: auto;
+    }
+}
+
+@media(max-width:768px) {
+    .logo {
+        img {
+            max-height: 100px;
+        }
+    }
+}

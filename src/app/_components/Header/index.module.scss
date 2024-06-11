@@ -1,0 +1,23 @@
+@use '../../_css/queries.scss' as *;
+
+.header {
+  padding: var(--base) 0;
+  //background-color: #605E5EA3;
+  background-color: #111827;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(var(--base) / 2) var(--base);
+}
+
+.logo {
+  width: auto;
+}
+
+.header_logo_wrapper {
+  max-width: 75px;
+  max-height: 50px;
+}
